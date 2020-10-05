@@ -1,0 +1,435 @@
+@font-face {
+font-family: 'Larsseit';
+src: url('../fonts/Larsseit-Light.woff2') format('woff2'),
+url('../fonts/Larsseit-Light.woff') format('woff');
+font-weight: 300;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Larsseit';
+src: url('../fonts/Larsseit-Medium.woff2') format('woff2'),
+url('../fonts/Larsseit-Medium.woff') format('woff');
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Larsseit';
+src: url('../fonts/Larsseit-Bold.woff2') format('woff2'),
+url('../fonts/Larsseit-Bold.woff') format('woff');
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Larsseit';
+src: url('../fonts/Larsseit.woff2') format('woff2'),
+url('../fonts/Larsseit.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+html,
+body {
+	color: #22356F;
+	font-family: 'Larsseit', sans-serif;
+	overflow-x: hidden;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+*:active, *:visited {
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.5s;
+}
+
+/*-----background-color-----*/
+
+.bg-light-blue {
+	background-color: #62D0DF;
+}
+.bg-blue {
+	background-color: #0052c1;
+}
+.bg-dark-blue {
+	background-color: #22356f;
+}
+
+.bg-purple {
+	background-color: #8F00FF;
+}
+
+.bg-grey {
+	background-color: #DEE1FF;
+}
+
+.bg-strawberry {
+	background: url(../img/strawberry.png) center no-repeat;
+	background-size: cover;
+}
+
+
+.bg-salad {
+	background-color: #C4E769;
+}
+
+.bg-pink {
+	background-color: #FFE2DE;
+}
+
+/*----header-----*/
+
+.header {
+	width: 100%;
+	height: 100vh;
+	background: url(../img/bg-2.png) top right no-repeat, url(../img/bg-1.png) center no-repeat;
+	background-size: contain, 100% 100%;
+	background-color: #f2f9e2;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header__container {
+	padding-top: 27px;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 24px;
+	color: #62d0df;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	width: 240px;
+}
+
+.menu__link, .menu__link:visited {
+	position: relative;
+	font-size: 14px;
+}
+
+
+.menu__link::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+  right: 50%;
+  bottom: -10px;
+  background-color: #22356F;
+  height: 2px;
+  transition: 0.5s;
+  margin-top: 50px;
+}
+
+.menu__link:hover:before {
+	right: 0;
+	left: 0;
+}
+
+.menu__button {
+	border-radius: 30px;
+	padding: 22px 32px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.menu__button:hover {
+	background-color: #f9b640;
+}
+
+.header__content {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.header__content-container {
+  width: 44%;
+  flex-basis: 429px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.header__title {
+	font-size: 48px;
+	line-height: 1.3;
+	letter-spacing: -0.35px;
+	text-transform: uppercase;
+}
+
+.header__text {
+	font-size: 24px;
+	line-height: 2;
+}
+
+.btn-inner {
+	flex-basis: 15%;
+	display: flex;
+	align-items: center;
+}
+
+.btn {
+	padding: 18px 30px;
+	background-color: inherit;
+	color: #f9b640;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	background-color: #f9b640;
+	color: #fff;
+}
+
+/*----.why----*/
+
+.why {
+	width: 100%;
+	background: url(../img/christopher-campbell-40367.png) right no-repeat;
+	background-size: contain;
+	background-color: #62D0DF;
+	color: #fff;
+}
+
+.why__content {
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	flex-basis: 70%;
+}
+
+.why__content-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-basis: 328px;
+  width: 49%;
+}
+
+.why__title {
+	font-size: 36px;
+	line-height: 27px;
+	letter-spacing: -0.006em;
+}
+
+.why__text {
+	font-size: 24px;
+	line-height: 35px;
+}
+
+/*-------about-----*/
+
+.about {
+	width: 100%;
+}
+
+.about__container {
+	width: 1250px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+
+.about__content {
+	height: 48vh;
+	display: flex;
+	align-items: flex-end;
+}
+
+.about__content-inner {
+	display: flex;
+}
+
+.about__title-inner {
+	flex-basis: 33%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.about h4 {
+	font-size: 16px;
+	line-height: 23px;
+	letter-spacing: 0.06em;
+ 	text-transform: uppercase;
+ 	font-weight: 400;
+}
+
+.about__we {opacity: 50%;}
+
+.about__text-inner {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-end;
+}
+
+.about__text {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 34px;
+	letter-spacing: 0.005em;
+	width: 67%;
+}
+
+.about__we-inner {
+	display: flex;
+	justify-content: center;
+	padding: 5% 0 1% 0;
+}
+
+.doing {
+	overflow: hidden;
+}
+
+.doing__list {
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+.doing__item {
+	height: 23vw;
+	flex-basis: 25%;
+	padding: 6% 0 0 5%;
+	position: relative;
+}
+
+.list-item {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 34px;
+	letter-spacing: -0.006em;
+	color: #fff;
+}
+
+.doing__item::before {
+	content: '';
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	background-color: #E9B730;
+	position: absolute;
+  top: 28%;
+  left: 11%;
+}
+
+.doing__item::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 80%;
+	background-color: #fff;
+	top: 18%;
+	left: 11%;
+}
+
+/*------Health------*/
+
+.health__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.health__item {
+	height: 32vw;
+	flex-basis: 33.3333%;
+	padding: 6% 0 0 5%;
+	position: relative;
+}
+
+.health__item::before {
+	content: '';
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	background-color: #E9B730;
+	position: absolute;
+  top: 20%;
+  left: 8%;
+}
+
+.health__item::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 80%;
+	background-color: #fff;
+	top: 13%;
+	left: 8%;
+}
+/*------plans-------*/
+
+.plans__list {
+	display: flex;
+	flex-wrap: wrap;
+	height: 500px;
+	margin-bottom: 10vh;
+}
+
+.plans__item {
+	flex-basis: 33.3333%;
+	padding: 6% 0 0 5%;
+}
+
+.plans__title {
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 33px;
+	letter-spacing: -0.03em;
+}
+
+.plans__text {
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: -0.03em;
+	opacity: 50%;
+	width: 54%;
+	padding-top: 4%;
+}
